@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    update_attributes ? redirect_to(project, notice: 'Project was successfully updated.' : render(action: "edit")
+    update_attributes ? redirect_to(project, notice: 'Project was successfully updated.') : render(action: "edit")
   end
 
   def destroy
